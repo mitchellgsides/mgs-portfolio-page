@@ -1,25 +1,23 @@
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta description="this page is to display the portfolio and information for Mitchell Sides">
         <title>Mitchell's Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="mgs-portfolio.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     </head>
     
     <body>  
         <nav class="navbar">
             <span class="navbar-toggle" id="js-navbar-toggle">
-                <i class="fas fa-bars"></i>
+                <span class="fas fa-dog"></span>
             </span>
-            <a href="#" class="logo"> <i class="fas fa-dog icon"></i></a>
             <ul class="main-nav" id="js-menu">
-                <li><a href="#" class="nav-links">Home</a> </li>
-                <li><a href="#" class="nav-links">Projects</a> </li>
-                <li><a href="#" class="nav-links">About</a> </li>
-                <li><a href="#" class="nav-links">Contact</a> </li>
-                <li><a href="#" class="nav-links"> Blog</a></li> 
+                <li><a href="#projects" class="nav-links">Projects</a> </li>
+                <li><a href="#about" class="nav-links">About</a> </li>
+                <li><a href="#contact" class="nav-links">Contact</a> </li> 
             </ul>
         </nav>
         <main id="main-content">
@@ -27,8 +25,9 @@
         <section id="hero">
             <h3>Hi, I'm Mitchell Sides. I'm a fullstack developer, ex-pro cyclist, and coach.</h3>
         </section>
-        <section id="projects">
-            <ul><h1>Projects</h1>
+        
+        <section class="projects">
+        <a name="projects"><h1>Projects</h1></a>
                 <ul class="app-details">Quiz App
                     <li>Description</li>
                     <li>Live</li>
@@ -41,11 +40,10 @@
                     <li>GitHub</li>
                     <li>Technologies</li>
                 </ul>
-            </ul>
         </section>
         
         <section id="about-me">
-            <h1>About</h1>
+            <a name="about"><h1>About</h1></a>
             <p>     I'm a full stack developer and student of programming languages and technology. 
                 Prior to development, I was a professional cyclist and coach, as well as a high school 
                 teacher in science and physical education. While coaching elite athletes using advanced 
@@ -55,7 +53,7 @@
                 acquire the knowledge and skills necessary to develop my own applications. I'm currently 
                 seeking employment in an area where I can integrate non-technical knowledge with my passion 
                 for code to develop powerful and effective solutions across various domains.
-
+            <br></br>
             <p>     In my time as an athlete, I've learned that a dedication to consistency and building 
                 on strong foundations with the help of skilled mentors leads to success, and I've carried these lessons forward
                 into my pursuit of new skills and technical knowledge. I still enjoy training and 
@@ -67,13 +65,15 @@
 
         </main>
         <footer class="footer-contact">
+            <a name="contact"><h1>Contact</h1></a>
        	    <ul>
                 <li><a href="https://linkedin.com/in/mitchell-sides/" target="_blank">linkedIn</a></li>
                 <li><a href="https://github.com/mitchellgsides" target="_blank" class="soc-icon">GitHub</a></li>
                 <li><a href="mailto:mitchellgsides@gmail.com">Gmail: mitchellgsides@gmail.com</a></li>
             </ul>
         </footer>
-                    <script src="mgs-portfolio.jsx"></script>  
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>  
+            
     </body>
 </html>
