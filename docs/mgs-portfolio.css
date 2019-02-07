@@ -72,18 +72,4 @@
   * {
     box-sizing: border-box;
   }
-  
-  #contact-form {
-      padding: 10%;
-  }
-  
-  form * {
-      padding: 10px;
-  }
-  
-  #form-submit {
-      padding: 5px;
-      text-align: center;
-      align-items: center;
-      margin-top: 5px;
-  }
+ 
