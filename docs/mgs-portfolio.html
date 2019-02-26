@@ -2,48 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sticky pages</title>
+    <title>Mitchell G Sides Portfolio</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="mgs-portfolio.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
 </head>
 <body>
+    
+    <a name="hero"></a>
     <div class="navbar"> 
         <nav>
                 <a class="fas fa-dog" href="#hero"></a>
-            <ul class="main-nav" id="js-menu">
-                <li><a href="#projects" class="nav-links">Projects</a> </li>
-                <li><a href="#about" class="nav-links">About</a> </li>
-                <li><a href="#contact" class="nav-links">Contact</a> </li> 
+                <a href="#projects" class="nav-links" id="projects">Projects</a>
+                <a href="#about" class="nav-links" id="about">About</a> 
+                <a href="#contact" class="nav-links" id="contact">Contact</a>
             </ul>
         </nav>
     </div>
    <section class="hero">
-       <p>Hi, I'm Mitchell Sides. I'm a fullstack developer, cyclist, and coach.</p>
-       
+       <div class="hero-container"></a>
+       <h1>Hi, I'm Mitchell Sides. I'm a fullstack developer, cyclist, and coach.</h1>
+       </div>
    </section>
 
-    <section>
-        <a name="projects" id="projects-page"><h1>Projects</h1></a>
-        <ul class="app-cards">
-        <ul class="app-details app-card"><h4>Quiz App</h4>
-            <li><img src="../mgs-portfolio/icon-images/Quiz-app-Capture.PNG" height="200"></li>
-            <li>Description</li>
-            <li>Live</li>
-            <li>GitHub</li>
-            <li>Technologies</li>
-        </ul>
-        <ul class="app-details app-card"><h4>Pending...</h4>
-            <li>Description</li>
-            <li>Live</li>
-            <li>GitHub</li>
-            <li>Technologies</li>
-        </ul>
-        </ul>
-   </section>
-
-   <section>
+   <section class="about-container">
+    <div id="about-anchor"><a name="about" id="about-page"></a></div>
     <div class="about-me">
-    <a name="about" id="about-page"><h1>About</h1></a>
+    <h1>About</h1>
     <p class="about-page-text">     I'm a full stack developer and student of programming languages and technology. 
         Prior to development, I was a professional cyclist and coach, as well as a high school 
         teacher in science and physical education. While coaching elite athletes using advanced 
@@ -63,13 +49,55 @@
     </div>
     </section>
 
+    <section class="projects-container">
+        <div id="proj-anchor"><a name="projects" id="projects-page"></a></div>
+        <h1>Projects</h1>
+        <ul class="app-cards">
+            <li><h4>Quiz App</h4></li>
+            <li><p>This is a basic quiz application designed using jQuery.</p></li>
+            <li><img src="../icon-images/Quiz-app-Capture.PNG" id="quiz-app-img"></li>
+            <li>
+                <ul class="app-details">
+                    <li><a href="https://github.com/mitchellgsides/quiz-app"><img src="../icon-images/github-icon.svg" height="20"></a></li>
+                    <li><a class="demo-link" href="https://mitchellgsides.github.io/quiz-app/">Demo</a></li>
+                    <li><img src="../icon-images/css3-icon.svg" height="20"><img src="../icon-images/html5-icon.png" height="20"><img src="../icon-images/javascript-icon.svg" height='20'><img src="../icon-images/jquery-icon.svg" height='20'></li>
+            </ul>
+            </li>
+        </ul>
+
+        <ul class="app-cards">
+            <li><h4>Strava Personal Record Analysis</h4></li>
+            <li><p>My second app is a power data analysis tool, powered by Strava's API.</p></li>
+            <li><img src="" id="second-app-img"></li>
+            <li>
+                <ul class="app-details">
+                  <li><a href="https://github.com/mitchellgsides/Strava-PR-Lister"><img src="../icon-images/github-icon.svg" height="20"></a></li>
+                  <li><a class="demo-link" href="https://mitchellgsides.github.io/Strava-PR-Lister/">Demo</a></li>
+                  <li><img src="../icon-images/css3-icon.svg" height="20"><img src="../icon-images/html5-icon.png" height="20"><img src="../icon-images/javascript-icon.svg" height='20'><img src="../icon-images/jquery-icon.svg" height='20'></li>
+                </ul>
+            </li>
+        </ul>
+
+                <ul class="app-cards">
+            <li><h4>App 3</h4></li>
+            <li><p>This app is going to be Awesome.</p></li>
+            <li><img src=""" id="second-app-img"></li>
+                    <li><ul class="app-details">
+                    <li><a href=""><img src="../icon-images/github-icon.svg" height="20"></a></li>
+                    <li><a class="demo-link" href="">Demo</a></li>
+                    <li><img src="../icon-images/css3-icon.svg" height="20"><img src="../icon-images/html5-icon.png" height="20"><img src="../icon-images/javascript-icon.svg" height='20'><img src="../icon-images/jquery-icon.svg" height='20'></li>
+                </ul>
+            </li>
+        </ul>
+
+   </section>
+
     <section class="footer">
         <footer>
             <a name="contact" id="contact-page"><h1>Contact</h1></a>
-       	    <ul id="contact-icons">
-                <li><a href="https://linkedin.com/in/mitchell-sides/" target="_blank"><img src="../icon-images/linkedin-icon.svg" height="30"></a></li>
-                <li><a href="https://github.com/mitchellgsides" target="_blank" class="soc-icon"><img src="../icon-images/github-icon.svg" height="30"></a></li>
-                <li><a href="mailto:mitchellgsides@gmail.com" target="_blank"><span class="fas fa-envelope" height="30"></span></a></li>
+                <span><a href="https://linkedin.com/in/mitchell-sides/" target="_blank"><img src="../icon-images/linkedin-icon.svg" height="30"></a></span>
+                <span><a href="https://github.com/mitchellgsides" target="_blank" class="soc-icon"><img src="../icon-images/github-icon.svg" height="30"></a></span>
+                <span><a href="mailto:mitchellgsides@gmail.com" target="_blank"><span class="fas fa-envelope" height="30"></span></a></span>
             </ul>
         </footer>
     </section>

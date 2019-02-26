@@ -1,162 +1,156 @@
-
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
 }
 
 :root {
-    --drkRd: #b22606;
-    --ltRd: #ff6f4f;
-    --mainCol: #4fffc0;
-    --drkGrn: #25b280;
-    --ltGrn: #68ffc9;
+    --drkRd: rgba(178, 38, 6);
+    --ltRd: rgba(255, 112, 79);
+    --mainCol: rgba(79, 255, 192);
+    --drkGrn: rgba(37, 178, 128);
+    --ltGrn: rgba(104, 255, 201);
 }
 
-* a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.fas.fa-envelope {
-    color: black;
-    text-align: center;
-    vertical-align: center;
-    font-size: 30px;
-}
-
-
-#contact-icons li:hover {
-    
-}
-
-* a:hover {
-    font-weight: bold;
-    box-shadow: whitesmoke;
-}
-
-a.nav-links:hover {
-    text-shadow: black;
-}
-
-* h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Raleway', sans-serif;
 }
 
-p {
-    text-indent: 30pt;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
 }
 
-section {
-    height: 110vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    font-size: 15px;
-    top: -1px;
+body {
+  display: flex;
+  flex-direction: column;
 }
 
-
-.hero {
-  height: 55vh;
-  margin: 0 auto;
-  color: whitesmoke;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  background: 
-    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)
-    ),
-    url('../icon-images/Elevate-reduced.jpg');
-    background-repeat: no-repeat;
-}
-
-.about-me {
-    max-width: 500px;
-    padding: 20px;
-    background-color: var(--mainCol);
-}
-
-.navbar, .footer {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: var(--drkGrn);
-    color: whitesmoke;
-    z-index: 100;
-    height: 8vh;
-    margin: 0;
-    padding: 0;
-}
-
-.app-cards {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: space-around;
+#quiz-app-img, #second-app-img {
+  max-width: 500px;
 }
 
 nav, footer {
-    display: flex;
-    justify-content: space-evenly;
-    height: 8vh;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+  background-color: var(--drkRd);
 }
 
-nav ul, footer ul {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-    width: 50%;
+nav {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  right: 0;
 }
 
-nav ul > li a, footer ul > li a {
-    text-decoration: none;
+nav a {
+  color: whitesmoke;
+}
+
+nav a:hover {
+  text-shadow: 5px 5px 5px black;
+}
+
+nav element:hover {
+  cursor: pointer;
+}
+
+.hero, .projects-container, .about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 150vh;
+  position: sticky;
+  padding: 15px;
+}
+
+.hero {
+  background-color: black;
+}
+
+.projects-container {
+  background-color: blue;
+}
+
+.about-container {
+  background-color: red;
+}
+
+.hero p, .about-me {
+  max-width: 500px;
+}
+
+.hero {
+  height: 100vh;
+  color: whitesmoke;
+}
+
+.hero h1 {
+  text-align: left;
+}
+
+.projects-container {
+  color: whitesmoke;
+}
+
+.app-cards {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  max-width: 90vw;
+  border-radius: 10px;
+}
+
+.projects-container h4 {
+  padding: 10px;
 }
 
 
 
-footer ul {
-    width: 60%
+.demo-link {
+  background-color: var(--drkGrn);
+  color: whitesmoke;
+  border-radius: 5px;
+  vertical-align: -webkit-baseline-middle;
+  padding: 10px;
 }
 
-footer > ul > li > a {
-    height: 10px;
+.about-me h1, .about-me p{
+  padding: 10px;
 }
 
-section:nth-child(1) {
-    background-color: var(--mainCol);
+#quiz-app-img, #second-app-img, #third-app-img {
+  width: 70vw;
+  padding: 10px;
 }
 
-section:nth-child(2) {
-    background-color:var(--ltRd);
+.app-details {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
 }
 
-section:nth-child(3) {
-    background-color:var(--drkGrn);
-    color: whitesmoke;
+.app-cards li h4 {
+  font-size: 30px;
 }
 
-section:nth-child(4) {
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  background: 
-    linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.8)
-    ),
-    url('../icon-images/wallpaper-1de3c9.jpg');
+.fas.fa-envelope {
+  font-size: 30px;
+  color: black;
+}
+
+.about-container {
+  color: whitesmoke;
     background-repeat: no-repeat;
+  height: 100vh;
 }
 
-
-section:nth-child(6) {
-    background-color: var(--mainCol);
-    color: whitesmoke;
-    list-style-type: none;
-    text-decoration: none;
+.about-me {
+  background-color: var(--drkGrn);
+  border-radius: 10px;
 }
-
