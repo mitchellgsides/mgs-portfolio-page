@@ -1,75 +1,162 @@
-* {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-  }
-  
-  a {
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+:root {
+    --drkRd: #b22606;
+    --ltRd: #ff6f4f;
+    --mainCol: #4fffc0;
+    --drkGrn: #25b280;
+    --ltGrn: #68ffc9;
+}
+
+* a {
     text-decoration: none;
-  }
-  
-  nav, footer {
+    color: inherit;
+}
+
+.fas.fa-envelope {
+    color: black;
+    text-align: center;
+    vertical-align: center;
+    font-size: 30px;
+}
+
+
+#contact-icons li:hover {
+    
+}
+
+* a:hover {
+    font-weight: bold;
+    box-shadow: whitesmoke;
+}
+
+a.nav-links:hover {
+    text-shadow: black;
+}
+
+* h1, h2, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+    text-indent: 30pt;
+}
+
+section {
+    height: 110vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    top: -1px;
+}
+
+
+.hero {
+  height: 55vh;
+  margin: 0 auto;
+  color: whitesmoke;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)
+    ),
+    url('../icon-images/Elevate-reduced.jpg');
+    background-repeat: no-repeat;
+}
+
+.about-me {
+    max-width: 500px;
+    padding: 20px;
+    background-color: var(--mainCol);
+}
+
+.navbar, .footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--drkGrn);
+    color: whitesmoke;
+    z-index: 100;
+    height: 8vh;
+    margin: 0;
+    padding: 0;
+}
+
+.app-cards {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-around;
+}
+
+nav, footer {
+    display: flex;
+    justify-content: space-evenly;
+    height: 8vh;
+    width: 100%;
+    align-items: center;
+}
+
+nav ul, footer ul {
+    list-style-type: none;
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(0, 0, 0, .3);
-    padding: 10px;
-  }
-  
-  nav ul, footer ul {
-    flex-direction: row;
-    padding: 10px;
-    justify-content: space-between;
-  }
-  
-  nav ul li, footer ul li {
-    list-style-type: none;
-    padding: 7px;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+}
+
+nav ul > li a, footer ul > li a {
     text-decoration: none;
-  }
-  
-  #hero {
+}
+
+
+
+footer ul {
+    width: 60%
+}
+
+footer > ul > li > a {
+    height: 10px;
+}
+
+section:nth-child(1) {
+    background-color: var(--mainCol);
+}
+
+section:nth-child(2) {
+    background-color:var(--ltRd);
+}
+
+section:nth-child(3) {
+    background-color:var(--drkGrn);
     color: whitesmoke;
-    background-color: grey;
-    background-size: cover;
-    padding: 7px;
-  }
-  
-  section ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: whitesmoke;
-    border: 1px solid black;
-    padding: 14px;
-  }
-  
-  
-  section h1, footer > h1 {
-    padding: 10px;
-  }
-  
-  section ul li {
-    padding: 10px;
-  }
-  
-  
-  #about-me {
-    background-color: white;;
-    padding: 15px;
-  }
-  
-  #about-me p {
-    padding: 10px;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
- 
+}
+
+section:nth-child(4) {
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background: 
+    linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0.8)
+    ),
+    url('../icon-images/wallpaper-1de3c9.jpg');
+    background-repeat: no-repeat;
+}
+
+
+section:nth-child(6) {
+    background-color: var(--mainCol);
+    color: whitesmoke;
+    list-style-type: none;
+    text-decoration: none;
+}
+

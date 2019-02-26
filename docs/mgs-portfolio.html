@@ -1,78 +1,80 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta description="this page is to display the portfolio and information for Mitchell Sides">
-        <title>Mitchell's Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="mgs-portfolio.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    </head>
-    
-    <body>  
-        <nav class="navbar">
-            <span class="navbar-toggle" id="js-navbar-toggle">
-                <span class="fas fa-dog"></span>
-            </span>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sticky pages</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="mgs-portfolio.css">
+</head>
+<body>
+    <div class="navbar"> 
+        <nav>
+                <a class="fas fa-dog" href="#hero"></a>
             <ul class="main-nav" id="js-menu">
                 <li><a href="#projects" class="nav-links">Projects</a> </li>
                 <li><a href="#about" class="nav-links">About</a> </li>
                 <li><a href="#contact" class="nav-links">Contact</a> </li> 
             </ul>
         </nav>
-        <main id="main-content">
+    </div>
+   <section class="hero">
+       <p>Hi, I'm Mitchell Sides. I'm a fullstack developer, cyclist, and coach.</p>
+       
+   </section>
 
-        <section id="hero">
-            <h3>Hi, I'm Mitchell Sides. I'm a fullstack developer, ex-pro cyclist, and coach.</h3>
-        </section>
-        
-        <section class="projects">
-        <a name="projects"><h1>Projects</h1></a>
-                <ul class="app-details">Quiz App
-                    <li>Description</li>
-                    <li>Live</li>
-                    <li>GitHub</li>
-                    <li>Technologies</li>
-                </ul>
-                <ul class="app-details">Second App
-                    <li>Description</li>
-                    <li>Live</li>
-                    <li>GitHub</li>
-                    <li>Technologies</li>
-                </ul>
-        </section>
-        
-        <section id="about-me">
-            <a name="about"><h1>About</h1></a>
-            <p>     I'm a full stack developer and student of programming languages and technology. 
-                Prior to development, I was a professional cyclist and coach, as well as a high school 
-                teacher in science and physical education. While coaching elite athletes using advanced 
-                analytical software targeted at individualizing coaching (TrainingPeaks' WKO4, Golden 
-                Cheetah, TrainerRoad, and others), I discovered a passion for nuanced and unique software. 
-                With Bloc, I found an effective educational structure and a support system of mentors to 
-                acquire the knowledge and skills necessary to develop my own applications. I'm currently 
-                seeking employment in an area where I can integrate non-technical knowledge with my passion 
-                for code to develop powerful and effective solutions across various domains.
-            <br></br>
-            <p>     In my time as an athlete, I've learned that a dedication to consistency and building 
-                on strong foundations with the help of skilled mentors leads to success, and I've carried these lessons forward
-                into my pursuit of new skills and technical knowledge. I still enjoy training and 
-                racing my bike across the US with the development team I own and direct. To relax, I 
-                value spending time outdoors with my wife, Lydia, and our dog, Solomon. We 
-                particularly enjoy backpacking, camping, and hiking in the Rocky Mountains and across 
-                Texas.</p>
-        </section>
+    <section>
+        <a name="projects" id="projects-page"><h1>Projects</h1></a>
+        <ul class="app-cards">
+        <ul class="app-details app-card"><h4>Quiz App</h4>
+            <li><img src="../mgs-portfolio/icon-images/Quiz-app-Capture.PNG" height="200"></li>
+            <li>Description</li>
+            <li>Live</li>
+            <li>GitHub</li>
+            <li>Technologies</li>
+        </ul>
+        <ul class="app-details app-card"><h4>Pending...</h4>
+            <li>Description</li>
+            <li>Live</li>
+            <li>GitHub</li>
+            <li>Technologies</li>
+        </ul>
+        </ul>
+   </section>
 
-        </main>
-        <footer class="footer-contact">
-            <a name="contact"><h1>Contact</h1></a>
-       	    <ul>
-                <li><a href="https://linkedin.com/in/mitchell-sides/" target="_blank">linkedIn</a></li>
-                <li><a href="https://github.com/mitchellgsides" target="_blank" class="soc-icon">GitHub</a></li>
-                <li><a href="mailto:mitchellgsides@gmail.com">Gmail: mitchellgsides@gmail.com</a></li>
+   <section>
+    <div class="about-me">
+    <a name="about" id="about-page"><h1>About</h1></a>
+    <p class="about-page-text">     I'm a full stack developer and student of programming languages and technology. 
+        Prior to development, I was a professional cyclist and coach, as well as a high school 
+        teacher in science and physical education. While coaching elite athletes using advanced 
+        analytical software targeted at individualizing coaching, I discovered a passion for nuanced software. 
+        With Bloc, I found an effective educational structure and a support system of mentors to 
+        acquire the knowledge and skills necessary to develop my own applications. I'm currently 
+        seeking careers where I can integrate non-technical knowledge with my passion 
+        for code to develop powerful and effective solutions across various domains.
+    <br></br>
+    <p class="about-page-text">     Before falling in love with the challenge of problem solving with code, I learned that a dedication to consistency and building 
+        on strong foundations with the help of skilled mentors leads to success, and I've carried these lessons forward
+        into my pursuit of new skills and technical knowledge. When I'm not coding, I still enjoy training and 
+        racing my bike across the US with the development team I own and direct. To relax, I 
+        value spending time outdoors with my wife, Lydia, and our labrador retriever, Solomon. We 
+        particularly enjoy backpacking, camping, and hiking in the Rocky Mountains and across 
+        Texas.</p>
+    </div>
+    </section>
+
+    <section class="footer">
+        <footer>
+            <a name="contact" id="contact-page"><h1>Contact</h1></a>
+       	    <ul id="contact-icons">
+                <li><a href="https://linkedin.com/in/mitchell-sides/" target="_blank"><img src="../icon-images/linkedin-icon.svg" height="30"></a></li>
+                <li><a href="https://github.com/mitchellgsides" target="_blank" class="soc-icon"><img src="../icon-images/github-icon.svg" height="30"></a></li>
+                <li><a href="mailto:mitchellgsides@gmail.com" target="_blank"><span class="fas fa-envelope" height="30"></span></a></li>
             </ul>
         </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="mgs-portfolio.jsx"></script>  
-            
-    </body>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='mgs-portfolio.jsx'></script>
+</body>
 </html>
