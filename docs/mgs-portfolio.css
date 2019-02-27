@@ -30,9 +30,6 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
-#quiz-app-img, #second-app-img {
-  max-width: 500px;
-}
 
 nav, footer {
   display: flex;
@@ -131,8 +128,10 @@ nav element:hover {
 
 #quiz-app-img, #second-app-img, #third-app-img {
   width: 70vw;
-  padding: 10px;
+  margin: auto;
 }
+
+
 
 .app-details {
   display: flex;
@@ -150,6 +149,7 @@ nav element:hover {
 
 .app-cards li h4 {
   font-size: 30px;
+  margin: 5px;
 }
 
 .fas.fa-envelope {
