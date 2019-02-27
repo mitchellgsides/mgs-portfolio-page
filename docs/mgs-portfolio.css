@@ -3,8 +3,6 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-image: 
-    url('https://www.armytimes.com/resizer/_bZZ6YXsG1MGMSfiJxzcMHnFgPM=/1200x0/filters:quality(100)/arc-anglerfish-arc2-prod-mco.s3.amazonaws.com/public/PY7W7JI5U5ACFMJIJKHSEDAVFY.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -29,6 +27,7 @@ h1, h2, h3, h4 {
   list-style-type: none;
   text-align: center;
 }
+
 
 
 nav, footer {
@@ -172,10 +171,6 @@ nav element:hover {
     height: inherit;
   }
 
-  nav {
-    display: none;
-  }
-
   .slider {
   width: 375px;
   }
@@ -187,6 +182,7 @@ nav element:hover {
   text-align: center;
   overflow: hidden;
   width: inherit;
+  justify-content: space-evenly;
 }
 
 .slides {
