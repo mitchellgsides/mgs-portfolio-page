@@ -25,5 +25,14 @@ function aboutScroll() {
     )
   };
   
+function contactScroll() {
+  $('#contact').on('click', function(event) {
+    event.preventDefault();
+    $('html, body').animate(
+      {scrollTop: $('#contact-anchor').offset().top}, 1000); }
+    )
+}
+
   $(aboutScroll);
   $(projScroll);
+  $(contactScroll);
