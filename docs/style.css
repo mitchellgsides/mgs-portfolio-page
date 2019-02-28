@@ -6,18 +6,22 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-image: url('../icon-images/prism.png')
 }
 
 :root {
     --drkRd: rgba(178, 38, 6);
     --ltRd: rgba(255, 112, 79);
     --mainCol: rgba(79, 255, 192);
-    --drkGrn: rgba(37, 178, 128);
-    --ltGrn: rgba(104, 255, 201);
+   /* --drkGrn: rgba(37, 178, 128);
+    --ltGrn: rgba(104, 255, 201);*/
+    --ltGrn: rgba(105, 173, 149);
+    --drkGrn: rgb(38,130,97);
 }
 
 h1, h2, h3, h4 {
   font-family: 'Raleway', sans-serif;
+  padding: 15px;
 }
 
 * {
@@ -59,43 +63,80 @@ nav element:hover {
   cursor: pointer;
 }
 
-.hero, .projects-container, .about-container {
+.hero-container, .projects-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 150vh;
-  position: sticky;
   padding: 15px;
+  margin: auto;
+}
+
+.hero-container {
+  margin-top: 150px;
+  height: 250px;
+  padding: 0px;
 }
 
 .hero {
-  height: 100vh;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: black;
+  padding: 15px;
+  color: whitesmoke;
 }
 
 .hero * {
+  text-align: left;
   max-width: 500px;
+  min-height: 200px;
 }
 
-.slideshow {
-  background-color: rgba(37, 178, 128, 0.7);
+.hero h1 {
+  height: 200px;
+  margin: auto;
+}
+
+.hero p {
+  max-width: 500px;
 }
 
 .about-container {
-  background-color: rgba(178, 38, 6, 0.7);
-  height: inherit;
+  color: whitesmoke;
+  background-color: rgba(37, 178, 128, 0.3);
 }
 
-.hero p, .about-me {
-  max-width: 500px;
+#about-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80vw;
 }
 
+#about-img {
+  height: 300px;
+  width: 200px;
+  border-radius: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+  background-image: url('../icon-images/maroon_bells.jpg')
+}
 
-.hero h1 {
+#about-text {
+    margin-bottom: 35px;
+}
+
+#about-text p {
+  text-indent: 30px;
   text-align: left;
+  max-width: 500px;
+  padding: 20px;
+  margin: auto;
 }
+
+#about-anchor, #proj-anchor {
+  height: 50px;
+  width: 50px;
+}
+
 
 .projects-container {
   color: whitesmoke;
@@ -104,9 +145,10 @@ nav element:hover {
 .app-cards {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 15px;
+  width: 95vw;
   max-width: 500px;
   border-radius: 10px;
-  margin: 15px;
+  margin: 25px;
 }
 
 .projects-container h4 {
@@ -121,17 +163,17 @@ nav element:hover {
   padding: 10px;
 }
 
-.about-me h1, .about-me p{
-  padding: 10px;
-}
+
 
 #quiz-app-img, #second-app-img, #third-app-img {
-  width: 70vw;
-  max-width: 400px;
+
+  max-width: 100%;
   margin: auto;
 }
 
-
+#slide-1, #slide-2, #slide-3 {
+  width: 100vw;
+}
 
 .app-details {
   display: flex;
@@ -148,7 +190,7 @@ nav element:hover {
 }
 
 .app-cards li h4 {
-  font-size: 30px;
+  font-size: 24px;
   margin: 5px;
 }
 
@@ -157,22 +199,34 @@ nav element:hover {
   color: black;
 }
 
-.about-container {
-  color: whitesmoke;
-  height: 100vh;
-}
 
-.about-me {
-  border-radius: 10px;
-}
+
+
 
 @media screen and (max-width: 380px) {
-  .about-container {
-    height: inherit;
+
+  #about-header {
+  flex-direction: column;
+}
+
+
+  .slideshow {
+    padding: 0px;
   }
 
   .slider {
-  width: 375px;
+    max-width: 350px;
+    margin: auto;
+    overflow-x: hidden;
+  }
+
+  .slides {
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
   }
 
 }
@@ -199,8 +253,9 @@ nav element:hover {
   height: 10px;
 }
 .slides::-webkit-scrollbar-thumb {
-  background: black;
+  background: var(--drkRd);
   border-radius: 10px;
+  margin-bottom: 5px;
 }
 .slides::-webkit-scrollbar-track {
   background: transparent;
@@ -232,13 +287,10 @@ nav element:hover {
 .slider > a:active {
   top: 1px;
 }
-.slider > a:focus {
-  background: #000;
-}
 
 .slideshow {
   height: inherit;
-  padding: 20px;
+  background-color: rgba(255, 38, 6, 0.3);
   justify-content: space-evenly;
   align-items: center;
 }
