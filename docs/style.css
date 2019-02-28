@@ -120,6 +120,10 @@ nav element:hover {
   background-image: url('../icon-images/maroon_bells.jpg')
 }
 
+#about-header {
+  margin: auto;
+}
+
 #about-text {
     margin-bottom: 35px;
 }
