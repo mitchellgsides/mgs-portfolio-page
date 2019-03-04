@@ -20,6 +20,7 @@ body {
 }
 
 h1, h2, h3, h4 {
+  color: whitesmoke;
   font-family: 'Raleway', sans-serif;
   padding: 15px;
 }
@@ -110,15 +111,7 @@ nav element:hover {
   width: 80vw;
 }
 
-#about-img {
-  height: 300px;
-  width: 200px;
-  border-radius: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
-  background-image: url('../icon-images/maroon_bells.jpg')
-}
+
 
 #about-header {
   margin: auto;
@@ -203,9 +196,17 @@ nav element:hover {
   color: black;
 }
 
+#about-img {
+  max-width: 380px;
+  padding: 20px;
+  border-radius: 50px;
+}
 
-
-
+@media screen and (max-width: 480px) {
+  #about-header {
+    flex-direction: column;
+  }
+}
 
 @media screen and (max-width: 380px) {
 
@@ -213,6 +214,11 @@ nav element:hover {
   flex-direction: column;
 }
 
+#about-img {
+  max-width: 90vw;
+  padding: 20px;
+  border-radius: 50px;
+}
 
   .slideshow {
     padding: 0px;
